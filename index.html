@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Fylo landing page with two column layout</title>
+  </head>
+  <body class="">
+    <div class="">
+      <header class="relative w-[90%] lg:w-[95%] mx-auto">
+        <div class="flex justify-between items-center py-4">
+          <img class="w-20" src="./images/logo.svg" alt="" />
+          <nav>
+            <ul
+              id="menus"
+              class="absolute top-16 left-0 hidden md:flex text-center text-Light_Grayish_Blue md:text-Very_Dark_Blue space-y-4 items-center gap-4 bg-Very_Dark_Blue w-full p-6 md:p-0 md:px-4 md:static md:flex-row md:space-y-0 rounded-lg shadow-xl md:shadow-none md:bg-white"
+            >
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Sign in</a></li>
+            </ul>
+            <i id="hambmenu" class="fa-solid fa-bars block md:hidden"></i>
+          </nav>
+        </div>
+        <div
+          class="mt-12 sm:mt-32 lg:mt-2 flex md:flex-row flex-col-reverse gap-10 lg:p-12"
+        >
+          <div class="basis-1/2 flex flex-col justify-center p-4">
+            <div>
+              <h1
+                class="text-xl lg:text-4xl text-Very_Dark_Blue font-bold text-center md:text-left"
+              >
+                <span class="block">All your files in one secure</span>
+                location, accessible anywhere.
+              </h1>
+              <p
+                class="text-sm lg:text-lg text-center text-Desaturated_Blue mt-3 md:text-left"
+              >
+                Fylo stores your most important files in one secure location.
+                Access them whenever you need, share and colloborate with
+                friends, family, and co-workers.
+              </p>
+            </div>
+            <div>
+              <form
+                class="mt-4 flex items-center flex-col md:flex-row md:gap-2 justify-center"
+              >
+                <input
+                  class="w-full md:w-[60%] border-[1px] border-Desaturated_Blue p-1 outline-none"
+                  type="email"
+                  required
+                  placeholder="Enter your email"
+                />
+
+                <button
+                  class="mt-3 md:mt-0 w-full md:w-[38%] bg-Bright_Blue text-Light_Grayish_Blue p-2 text-sm"
+                >
+                  Get Started
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="basis-1/2">
+            <img class="w-full" src="./images/illustration-1.svg" alt="" />
+          </div>
+        </div>
+      </header>
+      <section
+        class="mt-12 bg-[url(./images/bg-curve-mobile.svg)] bg-cover bg-center bg-no-repeat w-full h-full p-5 lg:p-6"
+      >
+        <div
+          class="flex flex-col md:flex-row-reverse gap-10 justify-center items-center"
+        >
+          <div class="basis-1/2 w-full p-6 lg:p-20">
+            <img
+              class="w-full block"
+              src="./images/illustration-2.svg"
+              alt=""
+            />
+          </div>
+          <div class="basis-1/2 md:p-8 lg:p-12">
+            <div>
+              <h2
+                class="text-Very_Dark_Blue text-center font-bold md:text-2xl md:mt-4 lg:text-3xl md:text-left"
+              >
+                Stay productive, wherever you are
+              </h2>
+              <p class="text-Very_Dark_Blue mt-4 text-[0.8rem] lg:text-sm md:max-w-md">
+                Never let location be an issue when accessing your files. Fylo
+                has you covered for all of your file storage needs.
+              </p>
+              <p class="text-Very_Dark_Blue mt-4 text-[0.8rem] lg:text-sm md:max-w-md">
+                Securely share files and folders with friends, family and
+                colleagues for live colloboration. No email attachments
+                required!
+              </p>
+            </div>
+            <div class="text-center mt-4 lg:text-left">
+              <a
+                href="#"
+                class="relative text-Moderate_Cyan text-sm inline after:absolute after:-bottom-1 after:w-full after:left-0 after:h-[1px] after:bg-Moderate_Cyan"
+              >
+                See how Fylo works
+                <img class="inline" src="./images/icon-arrow.svg" alt=""
+              /></a>
+            </div>
+            <div
+              class="mt-6 drop-shadow-lg p-4 bg-white max-w-[290px] mx-auto lg:mx-0"
+            >
+              <img src="./images/icon-quotes.svg" alt="" />
+              <p class="text-[0.8rem] lg:text-sm text-Desaturated_Blue mt-1">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled colloboration machine.
+              </p>
+              <div class="flex gap-1 items-center mt-3">
+                <img
+                  class="w-10 rounded-full block"
+                  src="./images/avatar-testimonial.jpg"
+                  alt=""
+                />
+                <div class="text-[0.8rem]">
+                  <h3 class="font-bold">Kyle Burton</h3>
+                  <p>Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-Desaturated_Blue mt-6">
+        <div class="py-12 px-8 flex flex-col md:flex-row gap-10">
+          <div class="text-white md:w-1/2 lg:px-10 lg:py-4">
+            <h4 class="text-xl text-center font-bold md:text-left lg:w-[70%] lg:text-2xl">
+              Get early access today
+            </h4>
+            <p class="text-center text-sm mt-4 text-Light_Gray md:text-left lg:w-[70%] lg:text-md">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <div class="mt-6 md:w-1/2 flex flex-col justify-center items-center">
+            <form>
+              <input
+                class="w-full lg:w-[400px] lg:block p-1 outline-none"
+                type="email"
+                required
+                placeholder="email@example.com"
+              />
+              <button
+                class="w-full lg:max-w-[240px] mt-2 bg-Bright_Blue text-Light_Grayish_Blue py-2 text-[0.8rem]"
+              >
+                Get Starter for free
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="bg-Very_Dark_Blue text-Light_Gray px-6 py-8">
+          <div class="flex flex-col items-start gap-12 sm:flex-row sm:items-center sm:justify-around mt-2">
+            <div class="flex flex-col gap-2">
+              <div><img class="bg-white p-2 w-24 rounded-md" src="./images/logo.svg" alt=""></div>
+              <div class="flex items-center gap-3 mt-4">
+                <img src="./images/icon-phone.svg" alt="">
+                <p>Phone: +1-543-123-4567</p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="./images/icon-email.svg" alt="">
+                <p>example@fylo.com</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm">
+              <p>About us</p>
+              <p>Jobs</p>
+              <p>Press</p>
+              <p>Blog</p>
+            </div>
+            <div class="space-y-2 text-sm">
+              <p>Contact Us</p>
+              <p>Terms</p>
+              <p>Privacy</p>
+            </div>
+            <div class="custom-one space-x-2 flex items-center justify-center w-full sm:w-fit">
+              <a class="custom-p-0 border-white rounded-full py-1 px-2 border-2" href=""><i class="fa-brands fa-facebook"></i></a>
+              <a class="custom-p-1 border-white rounded-full py-1 px-2 border-2" href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a class="custom-p-2 border-white rounded-full py-1 px-2 border-2" href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
